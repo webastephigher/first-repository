@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0px;
+	padding:0px;
+}
+article, aside, footer, header, hgroup, nav, section {
+	display:block;
+}
+/* body {
+	text-align:center;
+} */
+
+body { /* main2 */
+	width:100%;
+	/*display:-webkit-box;*/
+	-webkit-box-pack:center;
+}
+h1 {
+	font:bold 20px Tahoma, Geneva, sans-serif;
+}
+
+h2 {
+	font:bold 14px Tahoma, Geneva, sans-serif;
+}
+#big_wrapper {
+	border:1px solid black;
+	width:1000px;
+	margin:20px auto;
+	text-align:left;
+}
+
+#big_wrapper_2 { /* main2 */
+	max-width:1000px;
+	margin:20px auto;
+	display:block;
+	-webkit-box-orient:vertical;
+	-webkit-box-flex:1;
+}
+#top_header {
+	background:yellow;
+	border:3px solid blue;
+	padding:20px;
+}
+#top_menu {
+	background:blue;
+	color:white;
+}
+#top_menu li {
+	display:inline-block;
+	list-style:none;
+	padding:5px;
+	font:bold 14px Tahoma, Geneva, sans-serif;
+}
+#main_section { /* main1 */
+	float:left;
+	width:660px;
+	margin:10px;
+	padding:10px;
+	border:1px solid black;
+}
+#new_div { /* main2 */
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
+	-webkit-box-flex:1;
+}
+#main_section_2 { /* main2 */
+	margin:20px;
+	padding:20px;
+	border:1px solid blue;
+	-webkit-box-flex:1;
+}
+article {
+	background:#fffbcc;
+	border:1px solid red;
+	padding:20px;
+	margin-bottom:15px;
+}
+article footer {
+	text-align:right;
+}
+
+#side_news {
+	  float:left;
+	  width:220px;
+	  margin:10px 0px;
+	  padding:30px;
+	  background:#66cccc;
+}
+#side_news_2 { /* main2 */
+	  width:220px;
+	  margin:20px 0px;
+	  padding:30px;
+	  background:#66cccc;
+}
+#the_footer {
+	clear:both;
+	text-align:center;
+	padding:20px;
+	border-top:2px solid green;
+}
+#the_footer_2 { /* main2 */
+	text-align:center;
+	padding:20px;
+	border-top:2px solid green;
+}
+
+/* css for four boxes */
+
+#mommy {
+	border:2px solid blue;
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:reverse; /* default is :normal */
+}
+#kid1 {
+	border:2px solid red;
+	background:green;
+	padding:20px;
+	margin:10px;
+}
+#kid2 {
+	border:2px solid red;
+	background:yellow;
+	padding:20px;
+	margin:10px;
+}
+#kid3 {
+	border:2px solid red;
+	background:red;
+	padding:20px;
+	margin:10px;
+}
+#kid4 {
+	border:2px solid red;
+	background:orange;
+	padding:20px;
+	margin:10px;
+}
+
+/* css and four boxes flex and resize kids according to group */
+
+
+#mommy_flex {
+	border:2px solid blue;
+	width:700px;
+	height:300px;
+	display:-webkit-box;
+	-webkit-box-orient:horizontal; /* could also be :vertical */
+	-webkit-box-pack:center; /* could also be :start or :end */
+	-webkit-box-align:center; /* could also be :left or :right */
+}
+#kid1_flex {
+	border:2px solid red;
+	background:green;
+	padding:20px;
+	margin:10px;
+	/* width:60px; /* don't need to set width because flex: will do it for you */
+	-webkit-box-flex:1;
+	-webkit-box-ordinal-group:2;
+}
+#kid2_flex {
+	border:2px solid red;
+	background:yellow;
+	padding:20px;
+	margin:10px;
+	/* width:60px; /* don't need to set width because flex: will do it for you */
+	-webkit-box-flex:1;
+	-webkit-box-ordinal-group:4;
+}
+#kid3_flex {
+	border:2px solid red;
+	background:red;
+	padding:20px;
+	margin:10px;
+	/* width:60px; /* don't need to set width because flex: will do it for you */
+	-webkit-box-flex:1;
+	-webkit-box-ordinal-group:3;
+}
+#kid4_flex {
+	border:2px solid red;
+	background:orange;
+	padding:20px;
+	margin:10px;
+	/* width:60px; /* don't need to set width because flex: will do it for you */
+	-webkit-box-flex:3;
+	-webkit-box-ordinal-group:1;
+}
