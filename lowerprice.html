@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").ready(function(){
+        $("fscom").show(2000);
+        $("fsnet").show(3000);
+        $("fsorg").show(4000);
+    });
+});
+</script>
+
+<style>
+fscom,fsnet,fsorg {
+	width:150px;
+	height:30px;
+	display:none;
+	background-color:red;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	border:3px white solid;
+	outline:red solid;
+	padding:25px;
+	font-family:arial;
+}
+domain {
+	color:red;
+	background-color:white;
+	padding:0px 5px 0px 5px;
+}
+</style>
+</head>
+
+<body>
+<fscom>FOR SALE - 1/2 OFF<br><domain>name.com</domain></fscom ><br><br>
+<fsnet>FOR SALE<br><domain>name.net</domain></fsnet><br><br>
+<fscom>FOR SALE<br><domain>name.com</domain></fscom ><br><br>
+<fsnet>FOR SALE - 1/4 OFF<br><domain>name.net</domain></fsnet><br><br>
+<fsorg>FOR SALE<br><domain>name.org</domain></fsorg>
+
+</body>
+</html>
